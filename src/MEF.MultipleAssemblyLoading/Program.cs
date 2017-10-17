@@ -1,22 +1,12 @@
-﻿
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Composition;
-using System.Composition.Hosting;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Loader;
 
-namespace Basic.MEF
+namespace MEF.MultipleAssemblyLoading
 {
     class Program
     {
-  
         static void Main(string[] args)
         {
-
-
             Car car = new Car();
 
             var container = Composer.Compose();
@@ -25,13 +15,5 @@ namespace Basic.MEF
             car.Drive();
             Console.ReadKey();
         }
-
-      
     }
-
-
-   
-
-
-  
 }

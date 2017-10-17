@@ -6,8 +6,8 @@ using System.Text;
 
 namespace Basic.MEF.Implementations
 {
-
     [Export(typeof(IEngine))]
+    
     public class Engine : IEngine
     {
         public void Start()
